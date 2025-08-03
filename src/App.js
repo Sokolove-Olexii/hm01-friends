@@ -1,11 +1,10 @@
-import transactions from "./transactions.json";
-import TransactionHistory from "./TransactionHistory";
+import FriendList from "./FriendList";
+import friends from "./friends.json";
 
 function App() {
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
-      <h2>Transaction History</h2>
-      <TransactionHistory items={transactions} />
+    <div>
+      <FriendList friends={friends} />
     </div>
   );
 }
